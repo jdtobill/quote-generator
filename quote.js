@@ -1,5 +1,5 @@
+var count = 0;
 $(document).ready(function() {
-	var count = 0;
 	var target ="";
 	display();
 	
@@ -25,7 +25,7 @@ $(document).ready(function() {
 		target+= " -" + quotes[count][1];
 		$("a.twitter-share-button").attr("href",target);
 		
-		if (count != quotes.length) {
+		if (count < quotes.length - 1) {
 			count += 1;
 		}else {
 			count = 0;
